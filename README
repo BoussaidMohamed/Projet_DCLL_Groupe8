@@ -1,0 +1,7 @@
+Bienvenue Dans Le Projet DCLL qui a comme buts : 
+
+1) Créer un fichier xml sous forme de questionnaire (questions et réponses)
+2) créer un programme java qui puisse lire le fichier xml
+3) créer un programme java qui puisse créer un fichier xml sous forme de questionnaire (l'effet
+inverse)
+4) créer une interface swing par exemple pour le QCM
