@@ -54,7 +54,6 @@ public class GenererFichierXML {
          XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
          sortie.output(document, System.out);
       } catch (java.io.IOException e) {
-    	  System.out.println("Erreur de format");
       	}
    }
 
@@ -70,7 +69,6 @@ public class GenererFichierXML {
          //avec en argument le nom du fichier pour effectuer la sérialisation.
          sortie.output(document, new FileOutputStream(fichier));
       } catch (java.io.IOException e) {
-    	  System.out.println("Erreur de format");
       	}
    }
 
