@@ -1,0 +1,15 @@
+Dans cette branche (brancheStephanie), nous avons
+fait :
+
+- la création du projet java contenant un package par défaut
+
+- une classe Java permettant de générer un fichier xml 
+
+- le fichier xml généré par cette classe se nomme Exercice1
+
+
+=> utilisation des plugins suivants :
+
+     - JDom : http://www.jdom.org/dist/binary/
+     - Checkstyle : http://sourceforge.net/projects/checkstyle/files/
+     - PMD : http://pmd.sourceforge.net/eclipse/
