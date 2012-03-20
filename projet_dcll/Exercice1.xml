@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="truefalse">
+    <name>
+      <text>Tomcat et JEE</text>
+    </name>
+    <questiontext format="moodle_format">
+      <text>Tomcat est un conteneur implementanttoutes les specifications JEE</text>
+    </questiontext>
+    <image />
+    <generalfeedback>
+      <text />
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>1</penalty>
+    <hidden>0</hidden>
+    <shuffleansnwers>0</shuffleansnwers>
+    <answer fraction="0">
+      <text>true</text>
+      <feedback>
+        <text>Tomcat est un conteneur Web uniquement</text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>false</text>
+      <feedback>
+        <text>Tomcat est un conteneur Web uniquement</text>
+      </feedback>
+    </answer>
+  </question>
+</quiz>
+
