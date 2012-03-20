@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<quiz>
+<!-- question: 0 -->
+<question type="category">
+<category>
+</category>
+</question>
+<!-- question: 37095 -->
+<question type="calculated">
+<name>
+<text>Aire du cercle</text>
+</name>
+<questiontext format="moodle_auto_format">
+<text>Calcul de l'aire du cercle ayant pour rayon {R}</text>
+</questiontext>
+<image/>
+<generalfeedback>
+<text/>
+</generalfeedback>
+<defaultgrade>1</defaultgrade>
+<penalty>0.1</penalty>
+<hidden>0</hidden>
+<shuffleanswers>0</shuffleanswers>
+<answer fraction="100">
+<text>3.14 * {R}*{R}</text>
+<tolerance>0.01</tolerance>
+<tolerancetype>1</tolerancetype>
+<correctanswerformat>1</correctanswerformat>
+<correctanswerlength>1</correctanswerlength>
+<feedback>
+<text/>
+</feedback>
+</answer>
+<units>
+<unit>
+<multiplier>1</multiplier>
+<unit_name>m2</unit_name>
+</unit>
+</units>
+<dataset_definitions>
+<dataset_definition>
+<status>
+<text>shared</text>
+</status>
+<name>
+<text>R</text>
+</name>
+<type>calculated</type>
+<distribution>
+<text>uniform</text>
+</distribution>
+<minimum>
+<text>1.0</text>
+</minimum>
+<maximum>
+<text>10.0</text>
+</maximum>
+<decimals>
+<text>1</text>
+</decimals>
+<itemcount>10</itemcount>
+<dataset_items>
+<dataset_item>
+<number>1</number>
+<value>6.9</value>
+</dataset_item>
+<dataset_item>
+<number>2</number>
+<value>9.7</value>
+</dataset_item>
+<dataset_item>
+<number>3</number>
+<value>5.2</value>
+</dataset_item>
+<dataset_item>
+<number>4</number>
+<value>7.1</value>
+</dataset_item>
+<dataset_item>
+<number>5</number>
+<value>4.8</value>
+</dataset_item>
+<dataset_item>
+<number>6</number>
+<value>6.0</value>
+</dataset_item>
+<dataset_item>
+<number>7</number>
+<value>6.3</value>
+</dataset_item>
+<dataset_item>
+<number>8</number>
+<value>5.0</value>
+</dataset_item>
+<dataset_item>
+<number>9</number>
+<value>6.2</value>
+</dataset_item>
+<dataset_item>
+<number>10</number>
+<value>2.6</value>
+</dataset_item>
+</dataset_items>
+<number_of_items>10</number_of_items>
+</dataset_definition>
+</dataset_definitions>
+</question>
+<!-- question: 37096 -->
+<question type="description">
+<name>
+</name>
+<questiontext format="moodle_auto_format">
+<text>Pas de calculatrice !</text>
+</questiontext>
+<image/>
+<generalfeedback>
+<text/>
+</generalfeedback>
+<defaultgrade>0</defaultgrade>
+<penalty>0</penalty>
+<hidden>0</hidden>
+<shuffleanswers>0</shuffleanswers>
+</question>
+<!-- question: 37097 -->
+<question type="essay">
+<name>
+<text>Question ouverte</text>
+</name>
+<questiontext format="moodle_auto_format">
+<text>Ecrire un programme qui affiche Hello world</text>
+</questiontext>
+<image/>
+<generalfeedback>
+<text/>
+</generalfeedback>
+<defaultgrade>1</defaultgrade>
+<penalty>0</penalty>
+<hidden>0</hidden>
+<shuffleanswers>0</shuffleanswers>
+<answer fraction="0">
+<feedback>
+<text/>
+</feedback>
+</answer>
+</question>
+<!-- question: 37098 -->
+<question type="matching">
+<name>
+</name>
+<questiontext format="moodle_auto_format">
+</questiontext>
+<image/>
+<generalfeedback>
+<text/>
+</generalfeedback>
+<defaultgrade>1</defaultgrade>
+<penalty>0.1</penalty>
+<hidden>0</hidden>
+<shuffleanswers>1</shuffleanswers>
+<subquestion>
+<text>JBOSS</text>
+<answer>
+<text>Redhat</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Websphere</text>
+<answer>
+<text>IBM</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>GlassFish</text>
+<answer>
+<text>Oracle</text>
+</answer>
+</subquestion>
+<subquestion>
+<text>Tomcat</text>
+<answer>
+</answer>
+</subquestion>
+</question>
+<!-- question: 37107 -->
+<question type="shortanswer">
+<name>
+<text>MVC</text>
+</name>
+<questiontext format="moodle_auto_format">
+<text>Que signifie MVC ?</text>
+</questiontext>
+<image/>
+<generalfeedback>
+<text/>
+</generalfeedback>
+<defaultgrade>1</defaultgrade>
+<penalty>0.1</penalty>
+<hidden>0</hidden>
+<shuffleanswers>0</shuffleanswers>
+<usecase>0</usecase>
+<answer fraction="100">
+<feedback>
+<text></text>
+</feedback>
+</answer>
+<answer fraction="100">
+<feedback>
+<text></text>
+</feedback>
+</answer>
+</question>
+<!-- question: 37105 -->
+<question type="shortanswer">
+<name>
+</name>
+<questiontext format="moodle_auto_format">
+</questiontext>
+<image/>
+<generalfeedback>
+<text/>
+</generalfeedback>
+<defaultgrade>1</defaultgrade>
+<penalty>0.1</penalty>
+<hidden>0</hidden>
+<shuffleanswers>0</shuffleanswers>
+<usecase>0</usecase>
+<answer fraction="100">
+<text>Simula 66</text>
+<feedback>
+<text>Parfait !</text>
+</feedback>
+</answer>
+<answer fraction="75">
+<text>Simula</text>
+<feedback>
+</feedback>
+</answer>
+</question>
+<!-- question: 37094 -->
+<question type="truefalse">
+<name>
+<text>Tomcat et JEE</text>
+</name>
+<questiontext format="moodle_auto_format">
+</questiontext>
+<image/>
+<generalfeedback>
+<text/>
+</generalfeedback>
+<defaultgrade>1</defaultgrade>
+<penalty>1</penalty>
+<hidden>0</hidden>
+<shuffleanswers>0</shuffleanswers>
+<answer fraction="0">
+<text>true</text>
+<feedback>
+<text>Tomcat est un conteneur Web uniquement.</text>
+</feedback>
+</answer>
+<answer fraction="100">
+<text>false</text>
+<feedback>
+<text>Tomcat est un conteneur Web uniquement.</text>
+</feedback>
+</answer>
+</question>
+</quiz>

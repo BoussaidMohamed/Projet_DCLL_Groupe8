@@ -17,3 +17,7 @@ Sur la branche brancheStephanie, nous avons fait :
      - JDom : http://www.jdom.org/dist/binary/
      - Checkstyle : http://sourceforge.net/projects/checkstyle/files/
      - PMD : http://pmd.sourceforge.net/eclipse/
+-------------------------------------------------------------------------------------------------
+Sur la branche brancheBoussaid, nous avons fait :
+- Création De Fichier XML "QCM.XML"
+-Modification de cette fichier pour qu'elle soit utiliser pour le sens inverse : XML==> Java
