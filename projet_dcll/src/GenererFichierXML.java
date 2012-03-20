@@ -15,6 +15,9 @@ public class GenererFichierXML {
 	 * document.
 	 */
 	private static org.jdom.Document document = new Document(racine);
+	
+	public GenererFichierXML() {	
+	}
 	/**
 	 * @return racine
 	 */
