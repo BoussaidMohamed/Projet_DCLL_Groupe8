@@ -204,8 +204,7 @@ public class GenererFichierXML {
       answer3.addContent(feedback5);
       Element text15 = new Element("text");  
       text15.setText("Une application  non distribuée peut implémentée MVC.");
-      feedback5.addContent(text15);
-      
+      feedback5.addContent(text15);     
       Element answer4 = new Element("answer");  
       question1.addContent(answer4);
       Attribute type7 = new Attribute("fraction", "100");
@@ -213,12 +212,6 @@ public class GenererFichierXML {
       Element text16 = new Element("text");  
       answer4.addContent(text16);
       text16.setText("Une architecture N tiers ou N vaut 3");
-      
-      
-      
-      
-      
-      
       affiche();
       enregistre("Exercice1.xml");
       //--------------------------------------------------
