@@ -4,7 +4,7 @@
     <name>
       <text>Tomcat et JEE</text>
     </name>
-    <questiontext format="moodle_format">
+    <questiontext format="moodle_auto_format">
       <text>Tomcat est un conteneur implementanttoutes les specifications JEE</text>
     </questiontext>
     <image />
@@ -26,6 +26,42 @@
       <feedback>
         <text>Tomcat est un conteneur Web uniquement</text>
       </feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name>
+      <text>Architecture a 3 niveaux ?</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text>Que désigne une architecture à 3 niveaux ?</text>
+    </questiontext>
+    <generalfeedback>
+      <text />
+    </generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.1</penalty>
+    <hidden>true</hidden>
+    <shuffleanswers />
+    <single />
+    <shuffleanswers />
+    <correctfeedback>
+      <text />
+    </correctfeedback>
+    <partiallycorrectfeedback>
+      <text />
+    </partiallycorrectfeedback>
+    <incorrectfeedback>
+      <text />
+    </incorrectfeedback>
+    <answernumbering>none</answernumbering>
+    <answer fraction="-100">
+      <text>Une architecture MVC</text>
+      <feedback>
+        <text>Une application  non distribuée peut implémentée MVC.</text>
+      </feedback>
+    </answer>
+    <answer fraction="100">
+      <text>Une architecture N tiers ou N vaut 3</text>
     </answer>
   </question>
 </quiz>

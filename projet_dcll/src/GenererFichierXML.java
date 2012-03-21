@@ -139,8 +139,89 @@ public class GenererFichierXML {
       Element text7 = new Element("text");
       text7.setText("Tomcat est un conteneur Web uniquement");
       feedback2.addContent(text7);
+      //--------------------------------------------------
+      Element question1 = new Element("question");
+      racine.addContent(question1);
+      Attribute type1 = new Attribute("type", "multichoice");
+      question1.setAttribute(type1);
+      Element name1 = new Element("name");
+      Element text8 = new Element("text");
+      text8.setText("Architecture a 3 niveaux ?");
+      name1.addContent(text8);
+      question1.addContent(name1);
+      Element questiontext1 = new Element("questiontext");
+      Attribute type5 = new Attribute("format", "moodle_auto_format");
+      questiontext1.setAttribute(type5);
+      Element text9 = new Element("text");
+      text9.setText("Que désigne une architecture à 3 niveaux ?");
+      questiontext1.addContent(text9);
+      question1.addContent(questiontext1);
+      Element generalfeedback1 = new Element("generalfeedback");
+      question1.addContent(generalfeedback1);
+      Element text10 = new Element("text");
+      generalfeedback1.addContent(text10);
+      Element defaultgrade1 = new Element("defaultgrade");
+      defaultgrade1.setText("1");
+      question1.addContent(defaultgrade1);
+      Element penalty1 = new Element("penalty");
+      penalty1.setText("0.1");
+      question1.addContent(penalty1);
+      Element hidden1 = new Element("hidden");
+      hidden1.setText("0");
+      question1.addContent(hidden1);
+      Element shuffleanswers1 = new Element("shuffleanswers");
+      hidden1.setText("1");
+      question1.addContent(shuffleanswers1);
+      Element single = new Element("single");
+      hidden1.setText("true");
+      question1.addContent(single);
+      Element shuffleanswers2 = new Element("shuffleanswers");
+      hidden1.setText("true");
+      question1.addContent(shuffleanswers2);
+      Element correctfeedback = new Element("correctfeedback");  
+      question1.addContent(correctfeedback);
+      Element text11 = new Element("text");  
+      correctfeedback.addContent(text11);
+      Element partiallycorrectfeedback = new Element("partiallycorrectfeedback");  
+      question1.addContent(partiallycorrectfeedback);
+      Element text12 = new Element("text");  
+      partiallycorrectfeedback.addContent(text12);
+      Element incorrectfeedback = new Element("incorrectfeedback");  
+      question1.addContent(incorrectfeedback);
+      Element text13 = new Element("text");  
+      incorrectfeedback.addContent(text13);
+      Element answernumbering = new Element("answernumbering");  
+      question1.addContent(answernumbering);
+      answernumbering.setText("none");
+      Element answer3 = new Element("answer");  
+      question1.addContent(answer3);
+      Attribute type6 = new Attribute("fraction", "-100");
+      answer3.setAttribute(type6);
+      Element text14 = new Element("text");  
+      text14.setText("Une architecture MVC");
+      answer3.addContent(text14);
+      Element feedback5 = new Element("feedback"); 
+      answer3.addContent(feedback5);
+      Element text15 = new Element("text");  
+      text15.setText("Une application  non distribuée peut implémentée MVC.");
+      feedback5.addContent(text15);
+      
+      Element answer4 = new Element("answer");  
+      question1.addContent(answer4);
+      Attribute type7 = new Attribute("fraction", "100");
+      answer4.setAttribute(type7);
+      Element text16 = new Element("text");  
+      answer4.addContent(text16);
+      text16.setText("Une architecture N tiers ou N vaut 3");
+      
+      
+      
+      
+      
+      
       affiche();
       enregistre("Exercice1.xml");
+      //--------------------------------------------------
    }
    
    public static void main(String[] args) {
