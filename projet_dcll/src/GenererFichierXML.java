@@ -91,7 +91,7 @@ public class GenererFichierXML {
       text1.setText("Tomcat et JEE");
       name.addContent(text1);
       Element questiontext = new Element("questiontext");
-      Attribute type2 = new Attribute("format", "moodle_format");
+      Attribute type2 = new Attribute("format", "moodle_auto_format");
       questiontext.setAttribute(type2);
       question.addContent(questiontext);
       Element text3 = new Element("text");
@@ -141,5 +141,10 @@ public class GenererFichierXML {
       feedback2.addContent(text7);
       affiche();
       enregistre("Exercice1.xml");
+   }
+   
+   public static void main(String[] args) {
+	   GenererFichierXML g = new GenererFichierXML();
+	   g.genererFichierXML();
    }
 }
