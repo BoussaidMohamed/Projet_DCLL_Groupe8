@@ -6,22 +6,5 @@ Bienvenue Dans Le Projet DCLL qui a comme buts :
 inverse)
 4) créer une interface swing par exemple pour le QCM
 
--------------------------------------------------------------------------------------------------
-
-Sur la branche brancheStephanie, nous avons fait :
-- la création du projet java contenant un package par défaut
-- une classe Java permettant de générer un fichier xml 
-- le fichier xml généré par cette classe se nomme Exercice1
-
-=> utilisation des plugins suivants :
-     - JDom : http://www.jdom.org/dist/binary/
-     - Checkstyle : http://sourceforge.net/projects/checkstyle/files/
-     - PMD : http://pmd.sourceforge.net/eclipse/
--------------------------------------------------------------------------------------------------
-Sur la branche brancheBoussaid, nous avons fait :
-- Cr�ation De Fichier XML "QCM.XML"
--Modification de cette fichier pour qu'elle soit utiliser pour le sens inverse : XML==> Java
--------------------------------------------------------------------------------------------------
-Sur la branche brancheBoussaid, nous avons fait :
 
 
