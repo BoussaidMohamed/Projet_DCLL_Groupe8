@@ -1,4 +1,3 @@
-
 import java.io.*;
 import org.jdom.*;
 import org.jdom.output.*;
@@ -7,63 +6,57 @@ import org.jdom.output.*;
  *This class permits to generate a xml file.
  */
 public class GenererFichierXML {
-	/**
-	 * element racine.
-	 */
-	private static Element racine = new Element("quiz");
-	/**
-	 * document.
-	 */
-	private static org.jdom.Document document = new Document(racine);
-	
-	public GenererFichierXML() {	
-	}
-	/**
-	 * @return racine
-	 */
+/**
+* element racine.
+*/
+private static Element racine = new Element("quiz");
+/**
+* document.
+*/
+private static org.jdom.Document document = new Document(racine);
+public GenererFichierXML() { }
+/**
+* @return racine
+*/
    public static Element getRacine() {
-		return racine;
-	}
+return racine;
+}
 
    /**
-    * @param racine
+    * @param racinee
     * @see setRacine#racine
     */
-	public static void setRacine(final Element racine) {
-		GenererFichierXML.racine = racine;
-	}
+public static void setRacine(final Element racine) {
+GenererFichierXML.racine = racine;
+}
 
-	/**
-	 * @return document
-	 */
-	public static org.jdom.Document getDocument() {
-		return document;
-	}
+/**
+* @return document
+*/
+public static org.jdom.Document getDocument() {
+ return document;
+}
 
-	/**
-	 * @param document
-	 * @see serDocument#document
-	 */
-	public static void setDocument(final org.jdom.Document document) {
-		GenererFichierXML.document = document;
-	}
+/**
+* @param document
+* @see serDocument#document
+*/
+public static void setDocument(final org.jdom.Document document) {
+GenererFichierXML.document = document;
+}
 
-
-	/**
-	 */
-	static void affiche() {
-      try {
+static void affiche() {
+try {
          //On utilise ici un affichage classique avec getPrettyFormat()
          XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
          sortie.output(document, System.out);
-      } catch (java.io.IOException e) {
-      	}
+} catch (java.io.IOException e)
    }
 
-	/**
-	 * @param fichier
-	 */
-	static void enregistre(final String fichier) {
+/**
+* @param fichier
+*/
+static void enregistre(final String fichier) {
       try {
          //On utilise ici un affichage classique avec getPrettyFormat()
          XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
@@ -71,18 +64,17 @@ public class GenererFichierXML {
          //de FileOutputStream
          //avec en argument le nom du fichier pour effectuer la sérialisation.
          sortie.output(document, new FileOutputStream(fichier));
-      } catch (java.io.IOException e) {
-      	}
+      } catch (java.io.IOException e)
    }
 
-	/**
-	 * @param args.
-	 */
-   public final void genererFichierXML() {
-	   String phrase = "Tomcat est un conteneur implementant";
-	   phrase += "toutes les specifications JEE";
-      Element question = new Element("question");
-      racine.addContent(question);
+/**
+* @param args.
+*/
+public final void genererFichierXML() {
+    String phrase = "Tomcat est un conteneur implementant";
+    phrase += "toutes les specifications JEE";
+    Element question = new Element("question");
+    racine.addContent(question);
       Attribute type = new Attribute("type", "truefalse");
       question.setAttribute(type);
       Element name = new Element("name");
