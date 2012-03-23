@@ -1,7 +1,18 @@
 import java.io.*;
 import org.jdom.*;
 import org.jdom.output.*;
-/**
+
+/**.
+ * <b> GenererFichierXML représente la classe
+ * qui permet de générer un fichier xml selon le format
+ * du moodle </b>
+ * <p>
+ * GenererFichierXML possède les attributs suivants :
+ * <ul>
+ * <li> l'élément racine </li>
+ * <li> le document dont le paramètre est la racine</li>
+ * </ul>
+ * </p>
  *@author GAUTIER STéphanie
  *This class permits to generate a xml file.
  */
@@ -14,47 +25,67 @@ private static Element racine = new Element("quiz");
 * document.
 */
 private static org.jdom.Document document = new Document(racine);
-public GenererFichierXML() { }
 /**
+ * Constructeur. Ici le constructeur n'est pas nécessaire.
+ */
+public GenererFichierXML() {
+}
+/**
+* Cette methode permet d'obtenir la racine
+* d'un fichier xml.
+* Retourne la racine d'un fichier xml.
 * @return racine
 */
    public static Element getRacine() {
 return racine;
 }
-
-   /**
-    * @param racinee
-    * @see setRacine#racine
-    */
+/**.
+* Cette méthode permet de donner un élément racine
+* au futur fichier xml
+* @param racine
+* @see setRacine#getRacine
+*/
 public static void setRacine(final Element racine) {
 GenererFichierXML.racine = racine;
 }
-
 /**
+* Cette methode permet d'obtenir le document
+* Retourne le document.
 * @return document
 */
 public static org.jdom.Document getDocument() {
- return document;
+return document;
 }
-
-/**
+/**.
+* Cette methode permet de donner un document à partir
+* de la classe GenererFichierXML
 * @param document
-* @see serDocument#document
+* @see setDocument#getDocument
 */
 public static void setDocument(final org.jdom.Document document) {
 GenererFichierXML.document = document;
 }
-
+/**
+* Ne prend rieb en paramètre.
+* Cette méthode permet d'afficher dans la console
+* le fichier généré
+* Ne retourne rien
+*/
 static void affiche() {
-try {
+      try {
          //On utilise ici un affichage classique avec getPrettyFormat()
          XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
          sortie.output(document, System.out);
-} catch (java.io.IOException e)
+} catch (java.io.IOException e) { 
+//exception Vide
+      }
    }
-
-/**
+/**.
+* Cete méthode permet d'enregistrer la génération dans
+* la console dans un document.
 * @param fichier
+* @see enregistrer#getDocument
+* @see enregitrer#setDocument
 */
 static void enregistre(final String fichier) {
       try {
@@ -64,17 +95,19 @@ static void enregistre(final String fichier) {
          //de FileOutputStream
          //avec en argument le nom du fichier pour effectuer la sérialisation.
          sortie.output(document, new FileOutputStream(fichier));
-      } catch (java.io.IOException e)
+      } catch (java.io.IOException e) {
+      	}
    }
-
-/**
-* @param args.
-*/
-public final void genererFichierXML() {
-    String phrase = "Tomcat est un conteneur implementant";
-    phrase += "toutes les specifications JEE";
-    Element question = new Element("question");
-    racine.addContent(question);
+	/**
+	 * Cette méthode permet de générer un fichier xml
+	 * Dans cette méthode, on créé le fichier.
+	 * Cette méthode ne retourne rien
+	 */
+   public final void genererFichierXML() {
+	   String phrase = "Tomcat est un conteneur implementant";
+	   phrase += "toutes les specifications JEE";
+      Element question = new Element("question");
+      racine.addContent(question);
       Attribute type = new Attribute("type", "truefalse");
       question.setAttribute(type);
       Element name = new Element("name");
@@ -83,7 +116,7 @@ public final void genererFichierXML() {
       text1.setText("Tomcat et JEE");
       name.addContent(text1);
       Element questiontext = new Element("questiontext");
-      Attribute type2 = new Attribute("format", "moodle_format");
+      Attribute type2 = new Attribute("format", "moodle_auto_format");
       questiontext.setAttribute(type2);
       question.addContent(questiontext);
       Element text3 = new Element("text");
@@ -133,5 +166,18 @@ public final void genererFichierXML() {
       feedback2.addContent(text7);
       affiche();
       enregistre("Exercice1.xml");
+   }
+   /**
+    * <b>
+    * le main principal
+    * la génération du fichier xml
+    * se fait ici.
+    * Le fichier généré est Exercice1.xml
+    * </b>
+    * @param args
+    */
+   public static void main(String[] args) {
+	   GenererFichierXML g = new GenererFichierXML();
+	   g.genererFichierXML();
    }
 }
