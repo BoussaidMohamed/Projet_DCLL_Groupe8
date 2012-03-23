@@ -2,135 +2,256 @@ package xmlEditor;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**.
+*CLass ParseXMLFile
+*@author Souissi
+*/
 public class Qcm {
-	
-	
-	public String type;
-	public String name;
-	public String questiontext;
-	public String questiontextFormat;
-	public String image;
-	public String generalfeedback;
-	public String defaultgrade;
-	public String penalty;
-	public String hidden;
-	public String shuffleansnwers;
-	public List<Answer> answer;
-	
-	
-	
-	public Qcm() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	
+
+/**.
+*attribut type
+*@author Souissi
+*/
+private String type;
+/**.
+*attribut Name
+*@author Souissi
+*/
+private String name;
+/**.
+*attribut questiontext
+*@author Souissi
+*/
+private String questiontext;
+/**.
+*attribut questiontextFormat
+*@author Souissi
+*/
+private String questiontextFormat;
+/**.
+*attribut image
+*@author Souissi
+*/
+private String image;
+/**.
+*attribut generalfeedback
+*@author Souissi
+*/
+private String generalfeedback;
+/**.
+*attribut defaultgarde
+*@author Souissi
+*/
+private String defaultgrade;
+/**.
+*attribut penalty
+*@author Souissi
+*/
+private String penalty;
+/**.
+*attribut hidden
+*@author Souissi
+*/
+private String hidden;
+/**.
+*attribut shuffleanswers
+*@author Souissi
+*/
+private String shuffleansnwers;
+/**.
+*attribut Answer
+*@author Souissi
+*/
+private List<Answer> answer;
+/**.
+*QCM()
+*@author Souissi
+*/
+public Qcm() {
+super();
+// TODO Auto-generated constructor stub
+}
+/**.
+*Cette methode possède les parametres suivants :
+ * @param type , name, questiontext, questiontextFormat, image, generalfeedback,
+ *@author Souissi
+ */
+
+public Qcm(final String type, final String name, final String questiontext,
+final String questiontextFormat, final String image, final String generalfeedback,
+final String defaultgrade, final String penalty, final String hidden,
+final String shuffleansnwers, final List<Answer> answer) {
+super();
+this.type = type;
+this.name = name;
+this.questiontext = questiontext;
+this.questiontextFormat = questiontextFormat;
+this.image = image;
+this.generalfeedback = generalfeedback;
+this.defaultgrade = defaultgrade;
+this.penalty = penalty;
+this.hidden = hidden;
+this.shuffleansnwers = shuffleansnwers;
+this.answer = answer;
+}
+/**.
+ * Methode GetQestionTextFormat
+ * @return questiontextFormat
+ */
+private String getQuestiontextFormat() {
+return questiontextFormat;
+}
+/**.
+ * Methode setQuestiontextFormat
+ * @param questiontextFormat
+ */
+public final void setQuestiontextFormat(final String questiontextFormat) {
+this.questiontextFormat = questiontextFormat;
+}
+
+/**.
+* Methode getType
+* @return type
+*/
+public final String getType() {
+return type;
+}
 
 
-	public Qcm(String type, String name, String questiontext,
-			String questiontextFormat, String image, String generalfeedback,
-			String defaultgrade, String penalty, String hidden,
-			String shuffleansnwers, List<Answer> answer) {
-		super();
-		this.type = type;
-		this.name = name;
-		this.questiontext = questiontext;
-		this.questiontextFormat = questiontextFormat;
-		this.image = image;
-		this.generalfeedback = generalfeedback;
-		this.defaultgrade = defaultgrade;
-		this.penalty = penalty;
-		this.hidden = hidden;
-		this.shuffleansnwers = shuffleansnwers;
-		this.answer = answer;
-	}
+/**.
+ * Methode setType
+ * @attrib type
+ * @param type
+ */
+public final void setType(final String type) {
+this.type = type;
+}
+/**.
+ * Methode getAnswer
+* @return answer
+ */
+public final List<Answer> getAnswer() {
+return answer;
+}
+/**.
+ * Methode setAnswer
+* @param answer
+ */
 
+public final void setAnswer(final List<Answer> answer) {
+this.answer = answer;
+}
+/**.
+ * Methode getName
+* @return name
+ */
+public final String getName() {
+return name;
+}
+/**.
+ * Methode setAnswer
+* @param name
+ */
+public final void setName(final String name) {
+this.name = name;
+}
+/**.
+ * Methode getQuestionText
+* @return questiontext
+ */
+public final String getQuestiontext() {
+return questiontext;
+}
+/**.
+ * Methode setQuestiontext
+* @param Questiontext
+ */
+public final void setQuestiontext(final String questiontext) {
+this.questiontext = questiontext;
+}
+/**.
+ * Methode getimage
+* @return image
+ */
+public final String getImage() {
+return image;
+}
+/**.
+ * Methode setimage
+* @param image
+ */
+public final void setImage(final String image) {
+this.image = image;
+}
+/**.
+ * Methode getGeneralfeedback
+* @return Generalfeedback
+ */
+public final String getGeneralfeedback() {
+return generalfeedback;
+}
+/**.
+ * Methode setGeneralfeedback
+* @param Generalfeedback
+ */
+public final void setGeneralfeedback(final String generalfeedback) {
+this.generalfeedback = generalfeedback;
+}
+/**.
+ * Methode getDefaultgrade
+* @return Defaultgrade
+ */
 
-
-	public String getQuestiontextFormat() {
-		return questiontextFormat;
-	}
-
-
-
-	public void setQuestiontextFormat(String questiontextFormat) {
-		this.questiontextFormat = questiontextFormat;
-	}
-
-
-
-	public String getType() {
-		return type;
-	}
-
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-
-	public List<Answer> getAnswer() {
-		return answer;
-	}
-
-
-	public void setAnswer(List<Answer> answer) {
-		this.answer = answer;
-	}
-
-
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getQuestiontext() {
-		return questiontext;
-	}
-	public void setQuestiontext(String questiontext) {
-		this.questiontext = questiontext;
-	}
-	public String getImage() {
-		return image;
-	}
-	public void setImage(String image) {
-		this.image = image;
-	}
-	public String getGeneralfeedback() {
-		return generalfeedback;
-	}
-	public void setGeneralfeedback(String generalfeedback) {
-		this.generalfeedback = generalfeedback;
-	}
-	public String getDefaultgrade() {
-		return defaultgrade;
-	}
-	public void setDefaultgrade(String defaultgrade) {
-		this.defaultgrade = defaultgrade;
-	}
-	public String getPenalty() {
-		return penalty;
-	}
-	public void setPenalty(String penalty) {
-		this.penalty = penalty;
-	}
-	public String getHidden() {
-		return hidden;
-	}
-	public void setHidden(String hidden) {
-		this.hidden = hidden;
-	}
-	public String getShuffleansnwers() {
-		return shuffleansnwers;
-	}
-	public void setShuffleansnwers(String shuffleansnwers) {
-		this.shuffleansnwers = shuffleansnwers;
-	}
-	
-	
-	
-	
-	
-
+public final String getDefaultgrade() {
+return defaultgrade;
+}
+/**.
+ * Methode setDefaultgrade
+* @param Defaultgrade
+ */
+public final void setDefaultgrade(final String defaultgrade) {
+this.defaultgrade = defaultgrade;
+}
+/**.
+ * Methode getpenalty
+* @return penalty
+ */
+public final String getPenalty() {
+return penalty;
+}
+/**.
+ * Methode setpenalty
+* @param penalty
+ */
+public final void setPenalty(final String penalty) {
+this.penalty = penalty;
+}
+/**.
+ * Methode getHidden
+* @return Hidden
+ */
+public final String getHidden() {
+return hidden;
+}
+/**.
+ * Methode setHidden
+* @param Hidden
+ */
+public final void setHidden(final String hidden) {
+this.hidden = hidden;
+}
+/**.
+ * Methode getShuffleansnwers
+* @return Shuffleansnwers
+ */
+public final String getShuffleansnwers() {
+return shuffleansnwers;
+}
+/**.
+ * Methode setShuffleansnwers
+* @param Shuffleansnwers
+ */
+public final void setShuffleansnwers(final String shuffleansnwers) {
+this.shuffleansnwers = shuffleansnwers;
+}
 }
