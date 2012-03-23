@@ -127,10 +127,4 @@ public class Qcm {
 	public void setShuffleansnwers(String shuffleansnwers) {
 		this.shuffleansnwers = shuffleansnwers;
 	}
-	
-	
-	
-	
-	
-
 }
