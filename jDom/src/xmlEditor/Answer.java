@@ -34,7 +34,7 @@ private String answerFraction;
  * @param text , feedback,answerFraction
  *@author Souissi
  */
-public Answer(final String text, final String feedback, final String answerFraction) {
+public final Answer(final String text, final String feedback, final String answerFraction) {
 super();
 this.text = text;
 this.feedback = feedback;
