@@ -12,7 +12,7 @@
       <text />
     </generalfeedback>
     <defaultgrade>1</defaultgrade>
-    <penalty>1</penalty>
+    <penalty>10000000000000000000000000000000000000</penalty>
     <hidden>0</hidden>
     <shuffleansnwers>0</shuffleansnwers>
     <answer fraction="0">
